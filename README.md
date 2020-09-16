@@ -2,7 +2,7 @@
 
 Track any instagram account, monitor growth and engagement, get estimated post rates. Built with React, Redux, Bootstrap, IGBlade API and Apex Charts.
 
-# ![](https://github.com/reachvivek/Instagram-Analytics-with-Growth-Dashboard/blob/master/preview.png)
+# ![](https://github.com/reachvivek/Instagram-Analytics-with-Growth-Dashboard/blob/master/ui-sample.png)
 
 [Instagram Analytics Dashboard](https://instagram-analytics-with-growth-dashboard.vercel.app/)
 
