@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { connect } from 'react-redux'
 import Card from './Card'
 import GrowthChart from './GrowthChart'; 
-import { FaDollarSign, FaFire, FaHeart, FaComment } from 'react-icons/fa'
+import { FaRupeeSign, FaFire, FaHeart, FaComment } from 'react-icons/fa'
 import { numFormatter, getRateDiff } from '../helpers'; 
 
 const ChartSection = ({ 
@@ -19,9 +19,9 @@ const ChartSection = ({
               <div className="col-md-6 col-xl-4">
                 <Card
                   title="Estimated earnings per post"
-                  data={`$${numFormatter(currCostPerPost)}`}
+                  data={`₹${numFormatter(currCostPerPost*73.16)} or $${numFormatter(currCostPerPost)} `}
                   rate={getRateDiff(currCostPerPost, prevCostPerPost)}
-                  icon={<FaDollarSign style={{ color: '#c73aa9' }} />}
+                  icon={<FaRupeeSign style={{ color: '#c73aa9' }} />}
                   wrapperColor='#f9e1f2'
                 />
               </div>
