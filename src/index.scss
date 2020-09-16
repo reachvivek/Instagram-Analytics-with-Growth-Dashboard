@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+
+
+/* *, html {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0; 
+} */
+
+body {
+  font-size: 15px; 
+  background: #e9ebf6;
+  min-height: 100vh; 
+  overflow-x: hidden; 
+  font-family: 'Quicksand', sans-serif; 
+}
+
+#root {
+  // height: 100%; 
+  // width: 100%;
+} 
+
+
+
+/* main {
+  height: 100%; 
+  width: 100%; 
+}
+
+@media screen and (min-width: 641px) {
+  main {
+    height: auto; 
+    width: 75%; 
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  main {
+    height: auto; 
+    width: 60%; 
+  }
+} */
+
+
+input {
+  border: none;
+  outline: none;
+}
+
+/*************** SEARCH **************/
+
+.MainSearch {
+  height: 100vh; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+      justify-content: center;
+}
+
+.MainSearch__Title {
+  color: white; 
+  margin: 1rem;
+  letter-spacing: 0.15rem; 
+  font-weight: 300;
+  font-size: 1.2rem;
+
+
+  @media (min-width: 700px) {
+    font-size: 2.4rem
+  }
+}
+
+.MainSearch__Bar {
+   
+  border-radius: 20px;
+  display: flex; 
+  align-items: center;
+  position: relative;
+  box-shadow: 3px 3px 20px 0px rgba(0, 0, 0, 0.19);
+
+
+  
+
+  &__icon {
+    position: absolute;
+    color: #6c757d; 
+    left: 20px;
+  }
+}
+
+.MainSearch__Bar button {
+  outline: none; 
+  position: absolute; 
+  right: 0; 
+  font-size: 1.2rem;
+  padding: 0.7rem 2rem;
+  border-radius: 20px;
+  border: none; 
+  background-color: #6c757d; 
+}
+
+.MainSearch__Bar input {
+  width: 80vw;
+  background: rgba(255,255,255,0.3);
+  font-size: 1.2rem;
+  padding: 0.7rem 3.5rem; 
+  border-radius: 20px;
+  color: #6c757d; 
+
+  @media (min-width: 700px) {
+    width: 40vw; 
+  }
+}
+
+.MainSearch ::placeholder {
+  color: #6c757d; 
+}
+
+
+/*************** SPINNER   **************/
+.Spinner {
+  width: 100vw;  
+  height: 100vh;
+}
+
+.Spinner__Title {
+  color: white; 
+  font-weight: 300;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/************************************   DASHBOARD   *************************************/
+.Dashboard {
+  max-width: 1080px;
+  margin: 5vw auto; 
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .1);
+  border-radius: 20px;
+
+  &__form {
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+    &__logo {
+      color: #f3bcec; 
+      // color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    }
+  }
+
+  &__input {
+    background-color: transparent; 
+    border: none; 
+    color: #495057;
+
+    &:focus{
+      color: #495057;
+      background-color: transparent; 
+      border-color: none;
+      border: none; 
+      box-shadow: none; 
+    }
+  }
+  &__stats {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+
+    &__image {
+      flex: 1; 
+      display: flex; 
+      align-items: center; 
+      margin-right: 1rem; 
+
+       @media (min-width: 414px) {
+         margin-right: 2rem; 
+      }
+    }
+
+    &__description {
+     flex: 8; 
+    }
+  }
+
+  &__avatar {
+   height: 5rem; 
+
+    @media (min-width: 414px) {
+      height: 7rem;
+    }
+
+    @media (min-width: 768px) {
+      height: 10rem;
+    }
+  }
+
+  &__graphs {
+    background-color: #f4f8fd;
+  }
+
+  &__card{
+    border-radius: 5px;  
+    background-color: white;
+   
+  }
+
+  @media only screen and (min-width: 1200px) {
+    // padding: 0
+  }
+}
+
+.Card {
+  border-radius: 5px;  
+  background-color: white;
+
+  &__iconWrapper {
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+  }
+
+  &__number {
+    font-size: 1.5rem; 
+    font-weight: 700;
+
+     @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__text {
+    margin-bottom: 0; 
+  }
+}
