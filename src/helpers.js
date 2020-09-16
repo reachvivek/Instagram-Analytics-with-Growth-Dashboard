@@ -87,29 +87,6 @@ export const getRateDiff = (currRate, prevRate) => {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // const growthDifference = (current, previous) => {
       //   let percentage = Math.round(100 - ((current/previous) * 100))
       //   if (current < previous) {

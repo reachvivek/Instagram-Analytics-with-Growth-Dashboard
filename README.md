@@ -2,7 +2,7 @@
 
 Track any instagram account, monitor growth and engagement, get estimated post rates. Built with React, Redux, Bootstrap, IGBlade API and Apex Charts.
 
-[Instagram Analytics Dashboard](https://ig-dashboard.netlify.app/)
+[Instagram Analytics Dashboard](https://instagram-analytics-with-growth-dashboard.vercel.app/)
 
 ## Getting Started
 
@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone the repo
 
 ```
-git clone https://github.com/aslyadneva/Instagram-Analytics-Dashboard.git
+git clone https://github.com/reachvivek/Instagram-Analytics-with-Growth-Dashboard.git
 ```
 
 2. Run npm install inside project root
