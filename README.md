@@ -36,3 +36,7 @@ npm start
 * [Bootstrap](https://getbootstrap.com/) - CSS Library
 * [IG Blade API](https://help.igblade.pro/en/articles/3493963-api-access) - API for accessing Instagram user data
 * [Apex Charts](https://apexcharts.com/) - Data Visualization Library
+
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=reachvivek)
+<!-- ![visitors](https://badges.pufler.dev/visits/reachvivek/reachvivek)
+![Visitor Count](https://profile-counter.glitch.me/reachvivek/count.svg) -->
